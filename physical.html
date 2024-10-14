@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Physical Therapy Websites</title>
+  <link rel="stylesheet" href="physical.css">
+  <link rel="stylesheet" href="physical3.css">
+  <script src="jquery-3.7.1.js"></script>
+  <script src="https://kit.fontawesome.com/9b1620d4a4.js" crossorigin="anonymous"></script>
+  <script src="physical.js"></script>
+  
+
+
+</head>
+
+<body>
+
+
+  <header id="header">
+
+    <div class="container1" onmouseleave="fun100()" >
+      <a href="physical.html" target="_self"  class="logo" onmouseover="fun2()" >
+        <img id="img" src="img/WhatsApp_Image_2024-10-01_at_2.31.44_AM-removebg-preview.png" alt="webpt logo">
+      </a>
+      <nav>
+        <ul id="bar">
+
+          <li>
+            <a href="#" onmouseover="fun2()"  id="h2" onclick="fun20()">فيديوهات ونصائح</a>
+        
+          </li>
+          <li>
+            <a onmouseover="fun1()" onclick="drop()" id="h1">ما نعالجه</a>
+            <div id="dropdown" onmouseleave="fun10()">
+              <a  href="#" class="w" onclick="back2()" >تخفيف آلام الظهر</a>
+              <a href="#" class="w" onclick="Shoulder()">تخفيف آلام الكتف</a>
+              <a href="#" class="w" onclick="back3()">تخفيف آلام الركبه</a>
+              <a href="#" class="w" onclick="back4()" >التوازن والمشي</a>
+              <a href="#" class="w" onclick="back5()">تأهيل بعد العمليات</a>
+              <a href="#" class="w" onclick="back6()">تخفيف اصابات اليد</a>
+              <a href="#" class="w" onclick="back7()">تخفيف الحوض</a>
+              <a href="#" class="w"  onclick="back8()">تخفيف الارتجاج</a>
+              <a href="#" class="w" onclick="fat()">السمنه والنحافه</a>
+
+
+            </div>
+          </li>
+
+
+          <li><a href="#" onclick="fun3()" onmouseover="fun2()" >أراء العملاء</a></li>
+          <li><a href="#" onclick="fun4()" onmouseover="fun2()">حول</a></li>
+          <li><a href="#" onclick="contactus()" id="4" onmouseover="fun2()">تواصل معنا</a></li>
+          <li><a href="physical.html" target="_self"  onmouseover="fun2()" >الرئيسيه</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <input type="button" class="login-btn" onclick="fun50()" onmouseover="fun2()" value="تسجيل الدخول" id="log">
+        <input type="button" class="get-started-btn" id="log2"  onmouseover="fun2()" value="مرحبًا">
+      </div>
+      <i onclick="bars()" id="bars2" class="fa-solid fa-bars"></i>
+      <span  id="close5" onclick="togglebar()">&times;</span>
+    </div>
+
+  </header>
+  <div class="div" id="test">
+    <div class="div-content">
+
+      <img class="img1" src="img/WhatsApp_Image_2024-10-01_at_11.56.32_AM-removebg-preview.png">
+
+
+      <h1 class="h1 hidden">د/ محمد زين العابدين</h1>
+    </div>
+
+    <div class="content">
+      <h1>مرحبًا بكم في عيادتنا للعلاج الطبيعي والسمنة والنحافة</h1>
+      <h2>نحن نعيد لكم الحيوية والنشاط!</h2>
+      <p>نحن نقدم برامج علاجية متكاملة تعتمد على أحدث التقنيات والممارسات الطبية لمساعدتكم في التعافي من الإصابات، تخفيف
+        الألم، وتحسين الأداء البدني. سواء كنت تبحث عن إعادة تأهيل بعد الجراحة، أو تسعى لتحسين لياقتك العامة، فريقنا من
+        المتخصصين هنا لدعمك في كل خطوة.</p>
+      <p>نضع صحتك وراحتك في المقدمة لنساعدك على استعادة نمط حياتك النشط.</p>
+
+      <input type="button" onclick="contactus()" value="احجز موعدك آلان">
+    </div>
+  </div>
+
+  <div class="qustion">
+    <h1>لماذا عياده د/ محمد زين العابدين</h1>
+    <div class="icons">
+      <div class="icon">
+
+        <div class="number"><i class="fa-solid fa-comments"></i>
+          <div class="x">1</div>
+
+        </div>
+        <img class="r2" src="img/Screenshot_2024-10-03_083902-removebg-preview2.png">
+
+
+        <h3>خدمة 24 ساعة على مدار الأسبوع</h3>
+        <p>لا داعي للانتظار في العياده، تواصل مع أفضل طبيب وعلى مدار الساعة.</p>
+      </div>
+      <div class="icon1">
+
+        <div class="number"><i class="fa-solid fa-lock"></i>
+          <div class="x">2</div>
+        </div>
+
+        <h3>خصوصية وأمان</h3>
+        <p>نحرص على خصوصية معلوماتك الصحية ونستخدم أحدث التقنيات لضمان أمان بياناتك.</p>
+      </div>
+      <img class="r1" src="img/Screenshot_2024-10-03_083902-removebg-preview.png">
+
+      <div class="icon2">
+
+        <div class="number"><i class="fa-solid fa-stethoscope"></i>
+          <div class="x">3</div>
+        </div>
+        <h3>أطباء معتمدين</h3>
+        <p>استشارات طبية مباشرة مع الطبيب خلال الدردشة الفورية والمكالمات.</p>
+      </div>
+      <img class="r3" src="img/Screenshot_2024-10-03_083902-removebg-preview.png">
+
+
+      <div class="icon3">
+
+        <div class="number"><i class="fa-solid fa-clipboard-list"></i>
+          <div class="x">4</div>
+        </div>
+
+
+        <h3>تكلفة مناسبة</h3>
+        <p>خدمات رعاية صحية بباقة اشتراك مختلفة تناسب احتياجاتك.</p>
+      </div>
+
+
+    </div>
+    <div class="cta">
+      <h3>تحدث مع الطبيب بخصوصيه تامه</h3>
+      <input type="button" onclick="Chat()" value="تحدث مع الطبيب آلان">
+    </div>
+  </div>
+  <div class="about">
+    <img class="img3" src="img/photo_2024-10-04_00-07-02-removebg-preview.png">
+    <div class="right">
+
+      <h3>
+        الدكتور محمد زين <br>
+      </h3>
+      <p>الحاصل على شهادة البكالوريوس <br>في العلاج الطبيعي من جامعة القاهرة<br> بتقدير امتياز. حصل على العديد من
+        <br>الشهادات
+        المعتمدة في تقنيات العلاج <br>اليدوي والتأهيل الحركي
+      </p>
+
+    </div>
+    <div class="left">
+
+      <h3> أخصائي العلاج الطبيعي </h3>
+      <p>بالإضافة إلى دراسات متقدمة<br> في علوم العلاج بالأجهزة الحديثة. يتميز بخبرة تزيد عن 10 سنوات في مجال العلاج
+        الطبيعي
+        .والتأهيل الرياضى</p>
+    </div>
+
+
+  </div>
+
+  <div class="news">
+    <div class="video">
+      <video id="video1" controls muted autoplay loop>
+        <source src="img/video/video_2024-10-01_16-32-30.mp4">
+      </video>
+    </div>
+
+   
+
+    <div class="video2">
+      <div class="text">
+        <h3>في هذا الفيديو، نقدم لمحة عن تجربة العلاج الطبيعي. </h3>
+        <p> تعمل عيادتنا مع كل مريض بشكل فردي لتقديم رعاية شخصية تركز على احتياجاته الخاصة. من خلال أساليب
+          علمية متقدمة وتمارين علاجية فعّالة، نساعد مرضانا على استعادة وظائفهم الحركية وتحقيق التحسن الذي يصبون إليه.
+          هدفنا هو تخفيف الألم، تعزيز التعافي، وإعادة الحركة بثقة وراحة.</p>
+        <input type="button" onclick="fun20()" value="المزيد من الفيديوهات">
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="treat">
+    <div class="treat-right">
+      <div class="right">
+        <h3>فهم حالتك هي خطوتك الأولي نحو التعافي</h3>
+        <p>نحرص علي تقديم مجموعه شامله من الخدمات العلاجيه , التي تساهم في تخفيف الالم وتحسين الحركه. تشمل خدماتنا
+          <span> تخفيف آلام الظهر والكتف والركبه بالإضافه الي إعاده التأهيل بعد عمليات الجراحه </span>كما نقدم برامج
+          مخصصه
+          <span> لعلاج إصابات اليد والحالات المتعلقه بالحوض والرقبه </span>مما يساعد علي اعاده الحركه الطبيعيه.
+        </p>
+        <input type="button" onclick="contactus()" value="احجز آلان">
+      </div>
+    </div>
+    <div class="left">
+      <img src="img/WhatsApp Image 2024-10-01 at 2.19.53 AM.jpeg">
+
+    </div>
+  </div>
+
+
+  <div class="photos">
+    <h1>خدماتنا</h1>
+
+
+    <div   onclick="back2()" class="img1" id="img1">
+      <img src="img/ظهر.jpg">
+      <div class="ineer" id="img11">
+        <p>تخفيف آلام الظهر</p>
+      </div>
+    </div>
+
+    <div onclick="Shoulder()" class="img1" id="img2">
+      <img src="img/كتف.jpg ">
+      <div class="ineer" id="img22">
+        <p>تخفيف آلام الالكتف</p>
+      </div>
+    </div>
+
+    <div onclick="back3()" class="img1" id="img3">
+      <img src="img/ركبه.jpg">
+      <div class="ineer" id="img33">
+        <p>تخفيف آلام الركبه</p>
+      </div>
+    </div>
+
+    <div onclick="back4()" class="img1" id="img4">
+      <img src="img/توازن.jpg">
+      <div class="ineer" id="img44">
+        <p>التوازن والمشي</p>
+      </div>
+    </div>
+
+    <div onclick="back5()" class="img1" id="img5">
+      <img src="img/قدم.jpg">
+      <div class="ineer" id="img55">
+        <p>تأهيل بعد العمليات</p>
+      </div>
+    </div>
+
+    <div onclick="back6()" class="img1" id="img6">
+      <img src="img/ايد.jpg">
+      <div class="ineer" id="img66">
+        <p>تخفيف إصابات اليد</p>
+      </div>
+    </div>
+
+    <div onclick="back7()" class="img1" id="img7">
+      <img src="img/حوض.jpg">
+      <div class="ineer" id="img77">
+        <p>تخفيف آلام الحوض</p>
+      </div>
+    </div>
+    <div  onclick="back8()" class="img1" id="img8">
+      <img src="img/صداع.jpg">
+      <div class="ineer" id="img88">
+        <p>تخفيف الارتجاج</p>
+      </div>
+    </div>
+    <div  onclick="fat()" class="img2" id="img9">
+      <img src="img/سمنه.jpg">
+      <div  class="ineer" id="img99">
+        <p >علاج السمنه والنحافه</p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+  <div class="Diet">
+
+    <div class="img">
+      <img src="img/karolis-milisauskas-eoVdk1z4ihI-unsplash.jpg">
+    </div>
+
+    <div class="right">
+      <h3>التغذية الطبيعية والاستشارات الطبية</h3>
+      <p>توفير خدمات التغذية الطبيعية بطريقة مناسبة لكل مريض. نحتوي على برامج متقدمة تتيح عليها تقديم مساعدات طبية
+        متناسبة
+        لكل مرض. بالإضافه الي الأجهزه الموضيعيه التخسيسه تحتوي البرامج على طبيبين معتمدين وتقنيات علاجية متقدمة.</p>
+
+      <input type="button" onclick="fat()" value="الحصول علي مستوي السمنه والنحافه">
+
+    </div>
+  </div>
+
+  <div class="rival">
+    <img src="img/photo_2024-10-05_05-18-45.jpg">
+  </div>
+
+  
+
+  <div class="slider">
+    <div class="mark">
+      <i class="fa-solid fa-quote-left"></i>
+    </div>
+    <div class="mark1">
+      <i class="fa-solid fa-quote-left"></i>
+    </div>
+    <div class="slider1">
+
+      <div class="before">
+        <i class="fa-solid fa-arrow-left"></i>
+      </div>
+      <div class="slider3">
+        <img src="img/تعليقات/photo_2024-10-07_10-38-56.jpg" class="active">
+        <img src="img/تعليقات/photo_2024-10-07_10-39-00.jpg">
+        <img src="img/تعليقات/photo_2024-10-08_02-37-16.jpg">
+        <img src="img/تعليقات/photo_2024-10-08_02-37-09.jpg">
+        <img src="img/تعليقات/photo_2024-10-08_02-37-19.jpg">
+        <img src="img/تعليقات/photo_2024-10-08_02-37-23.jpg">
+        <img src="img/تعليقات/photo_2024-10-08_02-37-13.jpg">
+      </div>
+      <div class="after">
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    </div>
+    <div class="slider-right">
+      <h4>من الألم إلي التقدم.</h4>
+      <p>نحن في عياده Physio Health نفتخر بثقة عملائنا ونسعد بمشاركتهم لتجاربهم الإيجابية معنا. هذه التجارب هي مثال على
+        التزامنا بتقديم أفضل رعاية طبية. نشكر الله على النتائج الجيدة التي حققها ونؤكد استمرارنا في تقديم الرعاية
+        الفعالة لكل عملائنا.</p>
+      <input type="button" onclick="fun3()" value="المزيد من قصص النجاح">
+     
+
+    </div>
+  </div>
+
+
+
+
+
+  <div class="all">
+    <h4>الأسئله الشائعه</h4>
+
+    <div class="qution">
+      <span class="span">١. ما هو العلاج الطبيعي وكيف يعمل؟</span>
+      <span class="arrow">&#9660;</span>
+      <div class="answer">
+        • العلاج الطبيعي هو تخصص طبي يساعد على تحسين الحركة وتخفيف الألم واستعادة الوظائف الطبيعية للجسم بعد الإصابات أو
+        العمليات الجراحية أو الأمراض. <br>يعتمد على تمارين تقوية العضلات، تقنيات التمدد، والعلاج اليدوي لتحسين الأداء
+        الوظيفي.
+      </div>
+    </div>
+    <div class="qution">
+      <span class="span">٢. ما هي فوائد العلاج الطبيعي بعد العمليات الجراحيه؟</span>
+      <span class="arrow">&#9660;</span>
+      <div class="answer">
+        • يساعد العلاج الطبيعي بعد العمليات الجراحية على تسريع عملية الشفاء، تقليل الألم، منع تصلب العضلات والمفاصل،
+        واستعادة الحركة الكاملة للمناطق المتأثرة بالجراحة.
+      </div>
+    </div>
+    <div class="qution">
+      <span class="span">٣. كم عدد الجلسات المطلوبه لتحقيق تحسن في حالتي؟</span>
+      <span class="arrow">&#9660;</span>
+      <div class="answer">
+        • يعتمد عدد الجلسات على نوع الإصابة أو المشكلة الصحية ودرجة تعقيدها. في بعض الحالات قد يتطلب الأمر عدة جلسات
+        بينما في حالات أخرى قد يحتاج المريض إلى علاج طويل المدى.
+      </div>
+    </div>
+    <div class="qution">
+      <span class="span">٤. هل يمكنني القيام بالعلاج الطبيعي في المنزل؟</span>
+      <span class="arrow">&#9660;</span>
+      <div class="answer">
+        • بعض التمارين يمكن القيام بها في المنزل بإشراف وتوجيه الطبيب، ولكن من الأفضل دائمًا مراجعة اختصاصي العلاج
+        الطبيعي للحصول على التشخيص الصحيح<br> والمراقبة الدقيقة لضمان أداء التمارين بشكل صحيح.
+      </div>
+    </div>
+    <div class="qution">
+      <span class="span">٥. هل العلاج الطبيعي مؤلم؟</span>
+      <span class="arrow">&#9660;</span>
+      <div class="answer">
+        • قد يشعر المريض ببعض الألم أو عدم الراحة في بداية الجلسات، خاصة إذا كانت العضلات أو المفاصل متيبسة. لكن العلاج
+        الطبيعي لا ينبغي أن يكون مؤلمًا بشكل كبير،<br> والطبيب سيعمل على تقليل أي إزعاج وضمان راحة المريض.
+      </div>
+    </div>
+    <div class="qution">
+      <span class="span">٦. ما هي الحالات التي تفيد من العلاج الطبيعي؟</span>
+      <span class="arrow">&#9660;</span>
+      <div class="answer">
+        • يمكن أن يستفيد من العلاج الطبيعي المرضى الذين يعانون من الإصابات الرياضية، آلام الظهر، التهاب المفاصل، مشاكل
+        الجهاز العصبي مثل السكتة الدماغية،<br> وكذلك الحالات التي تتطلب إعادة تأهيل بعد العمليات الجراحية.
+      </div>
+    </div>
+    <div class="qution">
+      <span class="span">٧. هل يجب لإحاله من طبيب للعلاج الطبيعي؟</span>
+      <span class="arrow">&#9660;</span>
+      <div class="answer">
+        • في بعض الحالات، يُفضل الحصول على إحالة من طبيب مختص، خاصة إذا كانت لديك حالة طبية معينة تتطلب تشخيصًا دقيقًا.
+        ومع ذلك،<br> يمكن لبعض الممارسين في مجال العلاج الطبيعي استقبال المرضى مباشرة حسب القوانين المحلية.
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="footer2">
+    <div class="container4">
+      <h4>ما نعالجه</h4>
+      <div class="right1">
+        <a href="#" class="w"  onclick="back2()">تخفيف آلام الظهر</a>
+        <a href="#" class="w" onclick="Shoulder()">تخفيف آلام الكتف</a>
+        <a href="#" class="w" onclick="back3()">تخفيف آلام الركبه</a>
+      </div>
+      <div class="right2">
+        <a href="#" class="w" onclick="back4()" >التوازن والمشي</a>
+        <a href="#" class="w" onclick="back5()">تأهيل بعد العمليات</a>
+        <a href="#" class="w" onclick="back6()">تخفيف اصابات اليد</a>
+      </div>
+
+      <div class="right3">
+       <a href="#" class="w" onclick="back7()">تخفيف الحوض</a>
+              <a href="#" class="w"  onclick="back8()">تخفيف الارتجاج</a>
+              <a href="#" class="w" onclick="fat()">علاج السمنه</a>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="location">
+    <iframe width="100%" height="100%" frameborder="0" style="border:0" loading="lazy"
+     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.9299635541815!2d30.98007102460941!3d30.038867074926475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145859889a6dc4e3%3A0xb3088603d87297b!2z2K7YqNiy2Kkg2Ygg2LTYp9mI2LHZhdin!5e0!3m2!1sar!2seg!4v1728533559806!5m2!1sar!2seg" >
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="footer">
+    <div class="container3">
+      <div class="social-icons">
+        <h3>وسائل التواصل الإجتماعي</h3>
+        <a href="https://www.facebook.com/PhysioHealthCente?mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
+        <a href="http://wa.me/201066606990"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/physio_health_dr_moh_zein/profilecard/?igsh=bHdhd3llbTRoMGxl"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:Physio.Heaith@yahoo.com"><i class="fa-solid fa-envelope"></i></i></a>
+      </div>
+      <div class="logo">
+        <img src="img/WhatsApp_Image_2024-10-01_at_2.31.44_AM-removebg-preview.png" alt="Logo">
+      </div>
+      <div class="contact">
+        <h3>اتصال</h3>
+        <a href="tel:2010666606990" class="p1">01066606990 <i class="fa-solid fa-phone-flip"></i></a><br>
+        <div class="p2"><a href="mailto:Physio.Heaith@yahoo.com"  >البريد الإلكتروني : Physico.Heaith@yahoo.com </a></div>
+      </div>
+      <div class="address">
+        <h3>عنوانا</h3>
+        <a href="https://maps.app.goo.gl/7NTZ1SGCkfNyzLeB6">
+          <i class="fa-solid fa-location-dot"></i> 
+          <p>٦ أكتوبر - ميدان الحصري زمزم مول برج ٣ الدور السادس بالمصعد</p>
+        </a>
+       
+      </div>
+
+     <div class="border">
+      <p> جميع الحقوق محفوظه لعياده فيزو هيلث سنتر @2024</p>
+      <span>حقوق النشر محفوظه بواسطه محمد جبريل</span>
+
+     </div>
+
+
+
+
+    </div>
+  </div>
+
+
+
+<a class="arrow-up" href="#">
+  <i class="fa-solid fa-arrow-up"></i>
+</a>
+  
+  
+
+  <div class="chat-icon" id="chatIcon">
+    <span class="chat-icon-open" id="open" onclick="toggleChat()">&#x1F4AC;</span>
+    <span class="chat-icon-close" id="close" onclick="toggleChat2()">&times;</span>
+  </div>
+
+
+  <div class="chat-box" id="chatBox">
+    <div class="chat-header">
+      <span class="chat-title">د/ محمد زين العابدين</span>
+    </div>
+    <a href="tel:2010666606990" class="chat-body3">
+      <div class="hi3">هاتف</div>
+      <i class="fa-solid fa-phone-volume"></i>
+    </a>
+    
+    <a href="https://www.facebook.com/PhysioHealthCente?mibextid=LQQJ4d" class="chat-body1" >
+      <div class="hi1">فيسبوك</div>
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="http://wa.me/201066606990" class="chat-body" >
+      <div class="hi">واتساب</div>
+      <i class="fa-brands fa-whatsapp"></i> 
+    </a>
+    <a href="https://www.instagram.com/physio_health_dr_moh_zein/profilecard/?igsh=bHdhd3llbTRoMGxl" class="chat-body2" >
+      <div class="hi2">انستجرام</div>
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/@dr_mohamed_zain?_t=8qMmCgyaC6G&_r=1" class="chat-body4" >
+      <div class="hi4">تيك توك</div>
+      <i class="fa-brands fa-tiktok"></i>
+    </a>
+    
+    
+    <p class="k"></p>
+    <div class="chat-in">
+
+      <input type="text" placeholder="اكتب......." class="chat-input" id="sen-txt">
+      <input type="button" value="إرسال" class="send-btn" onclick="sen()">
+    </div>
+  </div>
+
+  
+<div class="booking-page" id="file">
+        <span id="close2" onclick="togglebook()">&times;</span>
+        <div class="booking-container">
+            <img src="img/WhatsApp_Image_2024-10-01_at_2.31.44_AM-removebg-preview.png" alt="">
+            <div class="first">
+                <textarea rows="4" placeholder="اشرح للطبيب عن حالتك او استفسارك بإختصار"></textarea>
+                <p>٢٠٠ / ٠ حرف</p>
+            </div>
+            <div class="p">
+                <p>إرفاق صوره أو ملف طبي <y class="p1">(اختياري)</y>
+                </p>
+            </div>
+
+            <div class="second">
+                <input type="file" accept=".jpeg,.png,.pdf,.doc">
+            </div>
+
+            <div class="checkbox">
+                أؤكد أنني أفهم الخدمات التي يقدمها عيادتنا وأوافق على متابعة عرض نموذج الموافقة
+                <input type="checkbox" name="agree">
+            </div>
+            <input onclick="togglebook()" type="button" value="إرسال" class="button">
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
